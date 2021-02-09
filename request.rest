@@ -1,12 +1,12 @@
 GET http://localhost:3000/tasks?search=isss
 Content-Type: application/json
-
+Authorization: Bearer 
 
 ###
 
 GET http://localhost:3000/tasks
 Content-Type: application/json
-
+Authorization: Bearer 
 
 ###
 
@@ -38,3 +38,28 @@ Content-Type: application/json
 {
     "status":"IN_PROGRESS"
 }
+
+###
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+
+{
+    "email":"manko@gmail.com",
+    "password":"Vs3l4578"
+}
+
+###
+POST http://localhost:3000/auth/signin
+Content-Type: application/json
+
+
+{
+    "email":"manko@gmail.com",
+    "password":"Vs3l4578"
+}
+
+###
+POST http://localhost:3000/auth/test
+Content-Type: application/json
+Authorization: Bearer 

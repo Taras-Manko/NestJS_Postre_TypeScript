@@ -15,12 +15,10 @@ export class TaskRepository extends Repository<Task> {
         }
 
         if(search) {
-            console.log(search)
             query.andWhere('(task.title = :search OR task.description = :search)', { search: `%${search}%` })
             
         }
         const tasks = await query.getMany()
-        console.log(tasks)
         return tasks
 
     }
