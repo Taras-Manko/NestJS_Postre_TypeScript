@@ -6,33 +6,36 @@ Authorization: Bearer
 
 GET http://localhost:3000/tasks
 Content-Type: application/json
-Authorization: Bearer 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hbmtvMkBnbWFpbC5jb20iLCJpYXQiOjE2MTI5NTU1MTIsImV4cCI6MTYxMjk1OTExMn0.qqaRSCl75wv9RSVUWwckna4c3s796hxfud8szCuMMGs
 
 ###
 
-GET http://localhost:3000/tasks/4
+GET http://localhost:3000/tasks/2
 Content-Type: application/json
-
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hbmtvQGdtYWlsLmNvbSIsImlhdCI6MTYxMjk1NjQ2MywiZXhwIjoxNjEyOTYwMDYzfQ.8s7Y2_xsuJzgTPRnJJ4XNlUK2OfztZuGMj9GQc6exug
 
 
 ###
 POST http://localhost:3000/tasks
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hbmtvMkBnbWFpbC5jb20iLCJpYXQiOjE2MTI5NTU1MTIsImV4cCI6MTYxMjk1OTExMn0.qqaRSCl75wv9RSVUWwckna4c3s796hxfud8szCuMMGs
 
 
 {
-    "title":"іsssss",
+    "title":"і@2",
     "description":"і"
 }
 ###
 
 DELETE http://localhost:3000/tasks/2
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hbmtvQGdtYWlsLmNvbSIsImlhdCI6MTYxMjk1NjQ2MywiZXhwIjoxNjEyOTYwMDYzfQ.8s7Y2_xsuJzgTPRnJJ4XNlUK2OfztZuGMj9GQc6exug
 
 ###
 
-PATCH  http://localhost:3000/tasks/4/status
+PATCH  http://localhost:3000/tasks/2/status
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hbmtvQGdtYWlsLmNvbSIsImlhdCI6MTYxMjk1NjQ2MywiZXhwIjoxNjEyOTYwMDYzfQ.8s7Y2_xsuJzgTPRnJJ4XNlUK2OfztZuGMj9GQc6exug
 
 
 {
